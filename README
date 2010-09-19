@@ -12,3 +12,10 @@ nami is the ncurses portion
 devels packages to build
 * db4-devel
 * curses-devel
+
+
+On ubuntu
+   sudo apt-get install libdb4.8-dev
+   sudo apt-get install libncurses5-dev
+   sudo apt-get install binutils-dev
+

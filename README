@@ -19,3 +19,8 @@ On ubuntu
    sudo apt-get install libncurses5-dev
    sudo apt-get install binutils-dev
 
+
+Configuration
+   sudo cp config/nami.cfg.sample /etc/nami.cfg
+   sudo cp config/admin.conf /etc/asterisk/manager.d/admin.conf
+

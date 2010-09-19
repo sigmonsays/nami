@@ -1,0 +1,8 @@
+*.o
+*.so
+
+nami/amiwatch
+nami/build.h
+nami/nami
+
+nami/amiconsole

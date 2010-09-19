@@ -2,14 +2,16 @@
 #
 
 
-DB="db4.6"
+# 4.4, 4.6 and 4.8 have been known to work
+dbCFLAGS=-I/usr/include/db4.8
+dbLDFLAGS=-ldb-4.8
 
-CFLAGS=-I/usr/include/db4.6 -I. -I../inc -Wall -DDEBUG
 
-CFLAGS=-I/usr/include/db4.6 -I. -I../inc -Wall
+CFLAGS=${dbCFLAGS} -I. -I../inc -Wall -DDEBUG
 
-LDFLAGS=-ldb-4.6
+CFLAGS=${dbCFLAGS} -I. -I../inc -Wall
 
+LDFLAGS=${dbLDFLAGS}
 
 #LIB_OBJECTS=nami.o sock.o dbg.o manager_func.o manager_status.o md5.o
 LIB_OBJECTS=nami.o sock.o dbg.o manager_func.o manager_status.o 

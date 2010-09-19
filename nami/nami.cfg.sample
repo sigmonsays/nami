@@ -1,0 +1,15 @@
+; Sample configuration file for nami
+; Global configuration directives
+
+[globals]
+
+default_hostname = 'pbx.example.com'
+
+; How to format dates. See strftime(3) for parameters
+date_format = '[%F %T]'
+
+[profiles]
+; Start connection profile. Max 10
+
+; This is the format, all values are REQUIRED
+sample => 'user:pass@pbx.example.com'

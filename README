@@ -1,0 +1,14 @@
+NAMI - Ncurses Asterisk Manager Interface
+-----------------------------------------
+
+libami v0.01 pre-alpha
+
+libami is a C library for interfacing the asterisk manager 
+
+nami is the ncurses portion
+
+
+
+devels packages to build
+* db4-devel
+* curses-devel

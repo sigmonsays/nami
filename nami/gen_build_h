@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "#define NAMI_VERSION \"0.0.2\""
+echo "#define NAMI_BUILD_DATE \"$(date)\""

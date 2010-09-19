@@ -1,0 +1,3 @@
+- Status messages (bottom screen) now disappear after ~30 seconds
+- The "Messages" window no remembers it's previous size during a resize
+- The "Monitor" window remembers the last message during a resize

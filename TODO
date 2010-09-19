@@ -1,0 +1,93 @@
+- Deal with the response of the Action: SIPPeers.
+	For instance:
+		1) Event: PeerEntry
+		2) Channeltype: SIP
+		3) ObjectName: affinity
+		4) ChanObjectType: peer
+		5) IPaddress: 69.30.45.229
+		6) IPport: 5060
+		7) Dynamic: no
+		8) Natsupport: no
+		9) ACL: no
+		10) Status: Unmonitored
+
+
+- Properly deal with the response of the Action: Status:
+	(use this to query active channels on connect )
+
+	1) Event: Status
+	2) Privilege: Call
+	3) Channel: SIP/seintrebor-0057
+	4) CallerID: 2692580000
+	5) CallerIDName: Rob Nies
+	6) Account: 
+	7) State: Up
+	8) Context: sip_outbound_national
+	9) Extension: 2692178917
+	10) Priority: 2
+	11) Seconds: 80
+	12) Link: Zap/1-1
+	13) Uniqueid: 1143150652.8528
+
+
+- Properly deal with the response of Action: ZapShowChannels
+	# Received message...
+	ManagerRecord (6)
+	 1) Event: ZapShowChannels
+	 2) Channel: 95
+	 3) Signalling: PRI Signalling
+	 4) Context: default
+	 5) DND: Disabled
+	 6) Alarm: Red Alarm
+	# Received message...
+	ManagerRecord (1)
+	 1) Event: ZapShowChannelsComplete
+
+
+Detailed peer status...
+
+	# Sending message:
+	ManagerRecord (2)
+	 1) Action: SipShowPeer
+	 2) Peer: user6169800036
+
+	# Received message...
+	ManagerRecord (37)
+	 1) Response: Success
+	 2) Channeltype: SIP
+	 3) ActionID: 
+	 4) ObjectName: user6169800036
+	 5) ChanObjectType: peer
+	 6) SecretExist: Y
+	 7) MD5SecretExist: N
+	 8) Context: sip_outbound
+	 9) Language: 
+	 10) AMAflags: Unknown
+	 11) CID-CallingPres: Presentation Allowed, Not Screened
+	 12) Callgroup: 
+	 13) Pickupgroup: 
+	 14) VoiceMailbox: 
+	 15) LastMsgsSent: -1
+	 16) Call limit: 0
+	 17) Dynamic: Y
+	 18) Callerid: "Triton Office" <6169800036>
+	 19) RegExpire: 491 seconds
+	 20) SIP-AuthInsecure: no
+	 21) SIP-NatSupport: Always
+	 22) ACL: N
+	 23) SIP-CanReinvite: Y
+	 24) SIP-PromiscRedir: N
+	 25) SIP-UserPhone: N
+	 26) SIPLastMsg: 0
+	 27) ToHost: 
+	 28) Address-IP: 209.172.11.246
+	 29) Address-Port: 5060
+	 30) Default-addr-IP: 0.0.0.0
+	 31) Default-addr-port: 5060
+	 32) Default-Username: user6169800036
+	 33) Codecs: 0xe (gsm|ulaw|alaw)
+	 34) CodecOrder: gsm,ulaw,alaw
+	 35) Status: Unmonitored
+	 36) SIP-Useragent: Sipura/SPA2100-3.2.5(d)
+	 37) Reg-Contact : sip:user6169800036@209.172.11.246:5060
+
